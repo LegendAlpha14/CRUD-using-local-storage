@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>CRUD Application using local storage</h1>
+    </center>
+    <div class="main">
+
+        <form id="form" method="POST">
+            <input class="input" id="tName" type="text" placeholder="Task Name" required>
+            <input class="input" id="from" type="text" placeholder="Assign From" required>
+            <input class="input" id="to" type="text" placeholder="Assign To" required>
+
+            <textarea name="discription" placeholder="Discription" id="discription" cols="30" rows="10"
+                required></textarea>
+            <input class="input" type="date" name="" id="date" required>
+            <input class="input" type="button" id="add" value="Add" onclick="addData()">
+            <!-- <button type="submit" onclick="addData()">Add</button> -->
+        </form>
+
+    </div>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Task Name</th>
+                <th>Assign From</th>
+                <th>Assign To</th>
+                <th>Discription</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+            <!-- <tr >
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> -->
+
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
